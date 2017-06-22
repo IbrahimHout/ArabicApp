@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ArabicApp</string>
+    <string name="letters">Letters</string>
+    <string name="numbers">Numbers</string>
+    <string name="colors">Colors</string>
+    <string name="phrases">Phrases</string>
 </resources>
