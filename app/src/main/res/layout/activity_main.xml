@@ -8,20 +8,22 @@
 
         tools:context="com.example.zezoom.arabicapp.MainActivity">
 
-            <TextView
-                style="@style/CategoryStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/letters"
-                android:background="@color/category_letters"
-            />
-            <TextView
-                style="@style/CategoryStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/numbers"
-                android:background="@color/category_numbers"
-            />
+    <TextView
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/letters"
+        android:background="@color/category_letters"
+        android:onClick="openLettersActivity"/>
+
+    <TextView
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/numbers"
+        android:onClick="openNumbersActivity"
+        android:background="@color/category_numbers"
+        android:id="@+id/textView2" />
 
     <TextView
         style="@style/CategoryStyle"
@@ -29,15 +31,18 @@
         android:layout_height="wrap_content"
         android:text="@string/colors"
         android:background="@color/category_colors"
+        android:onClick="openColorsActivity"
+
         android:id="@+id/textView" />
 
     <TextView
-                style="@style/CategoryStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/phrases"
-                android:background="@color/category_phrases"
-            />
+        style="@style/CategoryStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/phrases"
+        android:background="@color/category_phrases"
+        android:onClick="openPhrasesActivity"
+        android:id="@+id/textView3" />
 
 
 </LinearLayout>
