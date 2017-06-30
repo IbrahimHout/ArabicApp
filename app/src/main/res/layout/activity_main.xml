@@ -9,40 +9,29 @@
         tools:context="com.example.zezoom.arabicapp.MainActivity">
 
     <TextView
+        android:id="@+id/letterstv"
         style="@style/CategoryStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/letters"
         android:background="@color/category_letters"
-        android:onClick="openLettersActivity"/>
+        />
 
     <TextView
         style="@style/CategoryStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/numbers"
-        android:onClick="openNumbersActivity"
         android:background="@color/category_numbers"
-        android:id="@+id/textView2" />
+        android:id="@+id/numberstv" />
 
     <TextView
         style="@style/CategoryStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/colors"
         android:background="@color/category_colors"
-        android:onClick="openColorsActivity"
-
-        android:id="@+id/textView" />
+        android:id="@+id/colorstv" />
 
     <TextView
         style="@style/CategoryStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="@string/phrases"
         android:background="@color/category_phrases"
-        android:onClick="openPhrasesActivity"
-        android:id="@+id/textView3" />
+        android:id="@+id/phrasestv" />
 
 
 </LinearLayout>

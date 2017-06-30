@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,23 +12,45 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView letterstv = (TextView) findViewById(R.id.letterstv);
+        TextView colorstv = (TextView) findViewById(R.id.colorstv);
+        TextView numberstv = (TextView) findViewById(R.id.numberstv);
+        TextView phrasestv = (TextView) findViewById(R.id.phrasestv);
+
+        letterstv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intet = new Intent(MainActivity.this,LettersActivity.class);
+                startActivity(intet);
+
+            }
+        });
+        colorstv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intet = new Intent(MainActivity.this,ColorsActivity.class);
+                startActivity(intet);
+            }
+        });
+        numberstv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intet = new Intent(MainActivity.this,NumbersActivity.class);
+                startActivity(intet);
+
+            }
+        });
+        phrasestv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intet = new Intent(MainActivity.this,PhrasesActivity.class);
+                startActivity(intet);
+
+            }
+        });
+
 
     }
 
-    public void openLettersActivity(View view){
-        Intent intet = new Intent(this,LettersActivity.class);
-        startActivity(intet);
-    }
-    public void openColorsActivity(View view){
-        Intent intet = new Intent(this,ColorsActivity.class);
-        startActivity(intet);
-    }
-    public void openNumbersActivity(View view){
-        Intent intet = new Intent(this,NumbersActivity.class);
-        startActivity(intet);
-    }
-    public void openPhrasesActivity(View view){
-        Intent intet = new Intent(this,PhrasesActivity.class);
-        startActivity(intet);
-    }
+
 }
